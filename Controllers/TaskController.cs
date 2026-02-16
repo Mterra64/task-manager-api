@@ -6,7 +6,7 @@ namespace TaskManagerApi.Controllers;
 [Route("api/[controller]")]
 public class TaskController : ControllerBase
 {
-    private static readonly List<string> Tasks = new();
+    private static readonly List<string> Tasks = new List<string>();
 
     [HttpGet]
     public IActionResult GetTasks()
